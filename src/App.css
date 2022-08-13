@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+  color: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  background-color: #161619;
+  padding: 50px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  height: 80rem;
+  width: 50rem;
+  background-color: #23252C;
+  display: inline-block;
+  margin: 5rem;
+  
+  /* margin-right: auto; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-title{
+  color: white;
+}
+
+.card-body{
+  height: 70rem;
+  width: 40rem;
+  background-color: #161619;
+  transform: translate(5rem, 5rem);
+  position: relative;
+}
+
+.card-image{
+  width: 40rem;
+  height: 30rem;
+  
+  background-image: url(https://s3-alpha-sig.figma.com/img/70f0/1291/0a4be9a6eaf565103fc6e2c325f3838a?Expires=1658102400&Signature=R3nJaFbYGUhBzeze7aKnopDlns~pNfzqJTPN8XXTkqonbV8HW76puZOmwTsmQ-aHOeU0KX7rVLQyj30hc4WyNC01G7z7KeqGr5s12tw-JWLyKBQdmd4zceKmEC~RREY-3i-6XB7qKUEbPgh4ZsKw-JWbgHrx6z489ZYA2~9s5gpezQc0Xf7A6CT~rWF4YOkhvSyblagU2FTRauoXaFGdS64aKDnMOjmL3lxEFzHb5GYvN8ixW~BjuS-lgWGKlroiRC1iR4uyIwYoymTcL-xJOZQ-hF~-ssTM3QiKkzWS5Yc0hY0TMsM~XGyG1zKEFPPwlu-~wyoRYoLZ2PCU4aAvig__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+  background-size: cover;
+  background-position: -40px -50px;
+}
+
+.info-name{
+  margin-top: 2rem;
+}
+
+.info-work{
+  font-weight: 100;
+  margin: .25rem 0px;
+  color: #F3BF99;
+}
+
+.App{
+  text-align: center;
+}
+
+.info-buttons{
+  margin: .75rem;
+  width: 10rem;
+  height: 4rem;
+  background-color: grey;
+  border-radius: 1rem;
+}
+
+.linkedin{
+  width: 2rem;
+  height: 2rem;
+}
+
+.about-interests{
+  text-align: left;
+  padding: 3rem;
+  padding-top: 1rem;
+
+}
+
+.info-about{
+  margin-top: 1rem;
+}
+
+.about{
+  margin-top: .5rem;;
+  font-weight: 50;
+  font-size: 1.25rem;
+  letter-spacing: .1rem;
+  
+}
+
+.card-footer{
+  width:100%;
+  /* background-color: antiquewhite; */
+  height: 4rem;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+
+}
+
+.social-icon{
+  width: 4rem;
+  height: 4rem;
+  margin: 0rem 2rem;
 }
